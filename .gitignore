@@ -1,0 +1,7 @@
+# Windows files #
+#################
+*.ini
+
+# Node files #
+##############
+node_modules
