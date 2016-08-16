@@ -28,7 +28,7 @@ gulp.task("sass", function(){
 });
 
 gulp.task("angular", function(){
-  return gulp.src("./app/*.js")
+  return gulp.src(["./app/*.js","!./app/app.min.js"])
   .pipe(concat("app.min.js"))
   .pipe(uglify())
   .pipe(gulp.dest("./app/"))
