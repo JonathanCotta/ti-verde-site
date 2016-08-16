@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="green">
 <head>
   <meta charset="utf-8">
   <title>Ti-Verde</title>
+  <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
   <header>
@@ -14,11 +15,14 @@
       <li><a href="#/sobre">Sobre</a></li>
     </ul>
   </header>
-  <section class=".">
+  <section class="content">
     <ng-view></ng-view>
   </section>
   <footer>
     <span>Created by Jonathan Cotta</span>
   </footer>
+  <script src="./node_modules/angular/angular.min.js" type="text/javascript"></script>
+  <script src="./node_modules/angular-route/angular-route.min.js" type="text/javascript"></script>
+  <script src="./app/angular.min.js" type="text/javascript"></script>
 </body>
 </html>
