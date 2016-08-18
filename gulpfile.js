@@ -4,6 +4,8 @@ uglify = require('gulp-uglify');
 minify = require('gulp-csso');
 concat = require('gulp-concat');
 rename = require('gulp-rename');
+woff2 = require('gulp-ttf2woff2');
+eot = require('gulp-ttf2eot');
 brw = require('browser-sync').create();
 
 gulp.task("default",['browserSync','watcher'] ,function(){});
@@ -40,3 +42,19 @@ gulp.task("watcher",function(){
   gulp.watch("./index.html", ['sync']);
   gulp.watch("./app/components/**/*.html", ['sync']);
 });
+
+gulp.task("font", function(){
+  fontConvert(['roboto','Caviar-Dreams']);
+});
+
+function fontConvert(folders) {
+  folders.forEach(function(f, index){
+    gulp.src("./assets/font/"+ f +"/*.ttf")
+    .pipe(woff2())
+    .pipe(gulp.dest("./assets/font/"+ f +"/"));
+
+    gulp.src("./assets/font/"+ f +"/*.ttf")
+    .pipe(eot())
+    .pipe(gulp.dest("./assets/font/"+ f +"/"));
+  });
+}
