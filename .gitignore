@@ -1,7 +1,8 @@
-# Windows files #
+# Files #
 #################
 *.ini
 
-# Node files #
+# Folders #
 ##############
 node_modules
+dist

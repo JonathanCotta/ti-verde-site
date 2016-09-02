@@ -1,0 +1,27 @@
+.content{
+  font-family: $secundary-font;
+  color: $text-color;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  min-height: 100%;
+  padding: 2em;
+
+  p{
+    font-size: 1em;
+    text-indent: 2em;
+    text-align: justify;
+    &.quote{
+      width: 70%;
+      text-indent: 0em;
+      padding: 1em;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-left: solid $primary-color 0.4em;
+      margin-left: auto;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      //box-shadow: 3px 3px 15px #000;
+    }
+  }
+}

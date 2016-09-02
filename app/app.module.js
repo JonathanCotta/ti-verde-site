@@ -1,1 +1,3 @@
-var app = angular.module("green", ['ngRoute']);
+angular.module("templates",[]);
+
+var app = angular.module("green", ['ngRoute' , 'templates']);

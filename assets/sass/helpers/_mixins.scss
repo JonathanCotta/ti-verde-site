@@ -1,0 +1,17 @@
+@mixin font-face($name , $folder , $file , $style: normal, $weigth: normal , $path:"fonts"){
+  $filepath: "#{$path}/#{$folder}/#{$file}";
+  @font-face{
+    font-family: $name;
+    src: url("#{$filepath}.ttf") format('truetype'),
+    url("#{$filepath}.woff2") format('woff2'),
+    url("#{$filepath}.eot") format('embedded-opentype');
+    font-style: $style;
+    font-weight: $weigth;
+  }
+}
+
+@mixin background-gradient($colorA , $colorB , $direction:left){
+  background: $colorA; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to $direction , $colorA , $colorB); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to $direction , $colorA , $colorB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

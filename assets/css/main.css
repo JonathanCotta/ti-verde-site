@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+nav {
+  font-family: "Caviar Dreams";
+  color: #009688;
+  font-size: 1.5em;
+  font-weight: bolder;
+  height: 1.8em;
+  width: 80%;
+  border-bottom: solid #009688 0.2em;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+  nav ul {
+    list-style-type: none;
+    text-align: center; }
+  nav a {
+    text-decoration: none;
+    color: #009688; }
+    nav a:hover {
+      text-decoration: none;
+      font-size: 130%;
+      transition: 0.4s; }
+  nav li {
+    display: inline;
+    margin: 0.3em; }
+
+.content {
+  font-family: "Roboto";
+  color: #404040;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  min-height: 100%;
+  padding: 2em; }
+  .content p {
+    font-size: 1em;
+    text-indent: 2em;
+    text-align: justify; }
+    .content p.quote {
+      width: 70%;
+      text-indent: 0em;
+      padding: 1em;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-left: solid #009688 0.4em;
+      margin-left: auto;
+      margin-top: 2em;
+      margin-bottom: 2em; }
+
+footer {
+  font-family: "Caviar Dreams";
+  font-weight: bolder;
+  font-size: 1em;
+  color: #404040;
+  position: absolute;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+  text-align: center;
+  bottom: 0; }
+
+.container {
+  min-height: 98%;
+  position: relative; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/roboto/Roboto-Regular.ttf") format("truetype"), url("fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("fonts/roboto/Roboto-Regular.eot") format("embedded-opentype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("fonts/caviar-dreams/CaviarDreams.ttf") format("truetype"), url("fonts/caviar-dreams/CaviarDreams.woff2") format("woff2"), url("fonts/caviar-dreams/CaviarDreams.eot") format("embedded-opentype");
+  font-style: normal;
+  font-weight: normal; }
